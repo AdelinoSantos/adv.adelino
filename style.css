@@ -1,0 +1,273 @@
+body {font-family: 'Poppins', sans-serif;
+    color: #1c1c1c;
+}
+
+h1,h2,h3 {
+font-family: 'Poppins', sans-serif;
+color: #000000;
+
+}
+.botao {
+    color: #C29F48;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #671110;
+    font-size: .9em;
+    border-radius: 3px;
+
+}
+/*Navegação*/
+
+nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #971414;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #671110;
+    font-weight: 100px;
+    font-size: 15px;
+    font-family: "poppins", serif;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 50px 30px;
+        font-size: .9em;
+        border-radius: 3px;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+             
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+        text-decoration: none;
+        color: #C29F48;
+        font-size: 25px;
+    }
+    /*cabeçalho*/
+
+    header{
+        font-family:sans-serif;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../imagem.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #000000;
+        text-align: center;
+        padding:100px;
+        }
+
+        header h1 {
+        color: #971414;
+        }
+
+    header p{
+        margin-bottom: 1em;
+    }    
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 10px 10px 20px 20px;
+        background-color: #C29F48;
+        color: #971414;
+    }
+    #sobre h2 {
+        color: #080808;
+    }
+    #sobre p {
+        margin-bottom: 2.5em;
+        max-width: 1000px;
+    }
+    #sobre .botão{
+        background-color: #f1f1f1;
+        color: #1c1c1c;
+    }
+    
+    /*Área de Atuação*/
+
+    #areaatuacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    #areaatuacao div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    #img-areaatuacao{
+        text-align: center;
+
+    }
+    /*Serviços Online*/
+
+    #servonline{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    #servonline h1{
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    #servonline div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    #img-#servonline{
+        text-align: center;
+    }
+            #contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+         }
+         #contato h2 {
+             color: #000000;
+         }
+         footer {
+             text-align: center;
+             padding: 10px;
+             background-color: #971414;
+             color: #C29F48;
+         }
+         footer a {
+             text-decoration: none;
+             color: #00FFFF;
+         }
+        
+         @media screen and (min-width: 768px) {
+             /*nav*/
+             nav{
+                 flex-direction: row;
+                 justify-content: space-around;
+             }
+             nav ul {
+                flex-direction: row;
+                width: 70%;
+             }
+             /*Cabeçalho*/
+             header {
+                 height: 600px;
+                 height: 60vh;
+                 justify-content: center;
+                 }
+                 /*Sobre*/
+                 #sobre{
+                     height:250px;
+                     height: 30vh;
+                     justify-content: center;
+                    min-height: 250px;
+                 }
+                 /*área de atuação*/
+
+                 #areaatuacao {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    max-width: 1000px;
+                    margin: 0 auto;
+            }
+
+            #areaatuacao h2 {
+                text-align: cente;
+                width: 100%;
+            }
+
+            #areaatuacao div {
+                flex-grow: 1;
+                flex-basis: 150px;
+                padding: 0 10px;
+            }
+            /*imagem areaatuacao*/
+            #img-artigos{
+                text-align: center;
+
+            }
+            /*Serviços Online*/
+            
+            #servonline {
+                text-decoration: none;
+                padding: 50px;
+                text-align: justify;
+                flex-direction: row;
+                     flex-wrap: wrap;
+                     align-items: flex-start;
+                     max-width: 1000px;
+                     margin: 0 auto;
+                     margin-left: auto;
+                     margin-right: auto;
+            }
+            #servonline a {
+                text-decoration: none;
+                text-align: center;
+            }
+            #servonline h2 {
+                margin-bottom: 20px;
+                text-align: center;
+                width: 100%;
+            }
+          #servonline p {
+                margin-bottom: 2.5em;
+                max-width: 1000px;
+            }
+          #servonline .botão{
+                background-color: #C29F48;
+                color: #971414;
+            }
+            #servonline div {
+                flex-grow: 1;
+                flex-basis: 150px;
+                padding: 0 10px;
+            }
+            #servonline{
+                border-block-color:C29F48 ;
+
+            }
+
+        
+            /*Contato*/
+             #contato {
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: space-around;
+                 max-width: 800px;
+                 margin: 0 auto;
+             }
+             #contato h2, #contato p {
+                 width: 100%;
+             }
+
+             
+         }
